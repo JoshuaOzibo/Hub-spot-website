@@ -33,11 +33,11 @@ const Navbar = () => {
 
       <div className="flex items-center gap-4">
         <Button
-          className="border-2 rounded-lg bg-[#ff5c35] border-[#ff5c35] font-bold text-[#fff] py-2 px-4 text-sm"
+          className=" bg-[#ff5c35] font-bold text-[#fff] py-2 px-4 "
           value="Get a demo"
         />
         <Button
-          className="border-2 rounded-lg border-[#ff5c35] text-[#ff5c35] font-semibold py-2 px-4 text-sm"
+          className=" text-[#ff5c35] font-semibold py-2 px-4"
           value="Get started free"
         />
       </div>
