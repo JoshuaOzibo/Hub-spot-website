@@ -5,11 +5,7 @@ const Card = () => {
   return (
     <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
       {Database.map((item, index) => (
-        <main
-          className={`${
-            index === Database.length - 1 ? 'lg:col-span-3' : ''
-          }`}
-        >
+        <main className="bg-red-400" key={index}>
           <div>
             <img src="" alt="" />
             <h1>{item.title}</h1>
