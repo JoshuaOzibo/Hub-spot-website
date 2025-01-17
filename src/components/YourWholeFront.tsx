@@ -1,4 +1,5 @@
 import Button from "./Button";
+import Card from "./Card";
 
 export default function YourWholeFront() {
   return (
@@ -20,7 +21,7 @@ export default function YourWholeFront() {
           <Button className="" value="Get started free" />
         </div>
 
-        
+        <Card />
       </main>
     </section>
   );
