@@ -3,25 +3,33 @@ import Button from "./Button";
 
 const Card = () => {
   return (
-    <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+    <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       {Database.map((item, index) => (
-        <main className="bg-red-400 rounded p-6" key={index}>
-          <div>
-            <img src="" alt="" />
-            <h1>{item.title}</h1>
+        <main className="bg-red-400 rounded p-8" key={index}>
+          <div className=" pb-4">
+            <div>
+              <img src="" alt="" />
+              <h1 className="text-2xl font-bold mb-10">{item.title}</h1>
+            </div>
+            <p>{item.description}</p>
           </div>
-          <p>{item.description}</p>
+
+          {/* line */}
+          <div className="w-full border border-black my-6"></div>
           <div className="space-y-4">
             <h3 className="text-xl font-medium">{item.h3}</h3>
-            <ul>
+            <ul className="space-y-1 pb-4">
               {item.list.map((item) => (
-                <div>
+                <div className="flex items-center">
                   <img src="" alt="" />
                   <p>{item.p}</p>
                 </div>
               ))}
             </ul>
-            <Button className="" value="Learn more" />
+            <Button
+              className="w-full bg-[#ff5c35] py-4 text-base font-bold text-white"
+              value="Learn more"
+            />
           </div>
         </main>
       ))}
