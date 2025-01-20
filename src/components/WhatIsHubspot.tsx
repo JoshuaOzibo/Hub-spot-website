@@ -38,7 +38,7 @@ export default function () {
               with our full suite of free tools and upgrade as you grow.
             </p>
             <div className="flex gap-4">
-              <Button className=" px-5 font-bold bg-[#fc7756] text-white py-4" value="Get a demo" />
+              <Button className=" px-5 font-bold bg-[#ff5c35] text-white py-4" value="Get a demo" />
               <Button className=" px-8 font-semibold text-[#fc7756] py-4" value="Get started free" />
             </div>
           </div>

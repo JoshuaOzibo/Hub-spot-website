@@ -18,8 +18,8 @@ export default function YourWholeFront() {
             together.
           </p>
           <div className="flex justify-center gap-4">
-          <Button className="" value="Get a demo" />
-          <Button className="" value="Get started free" />
+          <Button className=" px-5 font-bold bg-[#ff5c35] text-white py-4" value="Get a demo" />
+          <Button className=" px-8 font-semibold text-[#fc7756] py-4" value="Get started free" />
           </div>
         </div>
 
