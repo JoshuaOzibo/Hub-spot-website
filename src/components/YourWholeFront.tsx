@@ -3,7 +3,7 @@ import Card from "./Card";
 
 export default function YourWholeFront() {
   return (
-    <section className="bg-[#f6f9fc] w-full py-5 lg:px-40 px-4">
+    <section className="bg-[#fef4ea] w-full py-5 lg:px-40 px-4">
       <main>
         <img src="" alt="" />
 
