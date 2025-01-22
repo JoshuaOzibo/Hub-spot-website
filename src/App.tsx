@@ -5,6 +5,7 @@ import WhatIsHubspot from "./components/WhatIsHubspot";
 import YourWholeFront from "./components/YourWholeFront";
 import MeetBreeze from "./components/MeetBreeze";
 import SolutionsForEvery from "./components/SolutionsForEvery";
+import HubspotCustomers from "./components/HubspotCustomers";
 const App = () => {
   return (
     <div>
@@ -15,6 +16,7 @@ const App = () => {
       <YourWholeFront />
       <MeetBreeze />
       <SolutionsForEvery />
+      <HubspotCustomers />
     </div>
   );
 };
