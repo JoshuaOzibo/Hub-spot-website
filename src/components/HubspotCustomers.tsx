@@ -2,7 +2,7 @@ import Button from "./Button";
 
 const HubspotCustomers = () => {
   return (
-    <section className="py-12 bg-[#192733] px-4">
+    <section className="py-12 bg-[#192733] px-5 lg:px-40 ">
       <h2 className="text-white text-center text-3xl font-bold mb-8">
         HubSpot customer’s results after 1 year:
       </h2>

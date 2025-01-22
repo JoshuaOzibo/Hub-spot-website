@@ -2,7 +2,7 @@ import Button from "./Button";
 
 const SolutionsForEvery = () => {
   return (
-    <section>
+    <section className="px-5 lg:px-40 ">
       <h3 className="mb-4">Solutions for every business</h3>
       <p>
         Growing a business isn’t easy, but we’ve got your back. Explore some of
