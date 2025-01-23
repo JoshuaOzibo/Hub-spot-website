@@ -7,6 +7,7 @@ import MeetBreeze from "./components/MeetBreeze";
 import SolutionsForEvery from "./components/SolutionsForEvery";
 import HubspotCustomers from "./components/HubspotCustomers";
 import GrowBetterWithHub from "./components/GrowBetterWithHub";
+import Footer from './components/Footer'
 const App = () => {
   return (
     <div>
@@ -19,6 +20,7 @@ const App = () => {
       <SolutionsForEvery />
       <HubspotCustomers />
       <GrowBetterWithHub />
+      <Footer />
     </div>
   );
 };
