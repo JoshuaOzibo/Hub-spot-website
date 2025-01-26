@@ -11,7 +11,7 @@ export const Database = [
         id: 0,
         title: "Marketing Hub®",
         description: "AI-powered marketing software that helps you generate leads and automate marketing.",
-        image: {iconOne},
+        image: `${iconOne}`,
         h3: "Popular Features",
 
         list: [
@@ -25,7 +25,7 @@ export const Database = [
         id: 1,
         title: "Marketing Hub®",
         description: "AI-powered marketing software that helps you generate leads and automate marketing.",
-        image: {iconTwo},
+        image: `${iconTwo}`,
         h3: "Popular Features",
 
         list: [
@@ -39,7 +39,7 @@ export const Database = [
         id: 2,
         title: "Marketing Hub®",
         description: "AI-powered marketing software that helps you generate leads and automate marketing.",
-        image: {iconThree},
+        image: `${iconThree}`,
         h3: "Popular Features",
 
         list: [
@@ -53,7 +53,7 @@ export const Database = [
         id: 3,
         title: "Marketing Hub®",
         description: "AI-powered marketing software that helps you generate leads and automate marketing.",
-        image: {iconFour},
+        image: `${iconFour}`,
         h3: "Popular Features",
 
         list: [
@@ -67,7 +67,7 @@ export const Database = [
         id: 4,
         title: "Marketing Hub®",
         description: "AI-powered marketing software that helps you generate leads and automate marketing.",
-        image: {iconFive},
+        image: `${iconFive}`,
         h3: "Popular Features",
 
         list: [
@@ -81,7 +81,7 @@ export const Database = [
         id: 5,
         title: "Marketing Hub®",
         description: "AI-powered marketing software that helps you generate leads and automate marketing.",
-        image: {iconSix},
+        image: `${iconSix}`,
         h3: "Popular Features",
 
         list: [
@@ -95,7 +95,7 @@ export const Database = [
         id: 6,
         title: "Marketing Hub®",
         description: "AI-powered marketing software that helps you generate leads and automate marketing.",
-        image: {iconSix},
+        image: `${iconSix}`,
         h3: "Popular Features",
 
         list: [

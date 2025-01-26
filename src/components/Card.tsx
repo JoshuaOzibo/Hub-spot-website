@@ -7,9 +7,9 @@ const Card = () => {
       {Database.map((item, index) => (
         <main className=" bg-white rounded p-8" key={index}>
           <div className=" pb-4">
-            <div>
-              <img src="" alt="" />
-              <h1 className="text-2xl font-bold mb-10">{item.title}</h1>
+            <div className="flex mb-10 items-center gap-3">
+              <img className="w-[30px] h-[30px]" src={item.image} alt="image" />
+              <h1 className="text-2xl font-bold">{item.title}</h1>
             </div>
             <p>{item.description}</p>
           </div>
