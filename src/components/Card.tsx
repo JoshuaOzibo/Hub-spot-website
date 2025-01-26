@@ -8,7 +8,11 @@ const Card = () => {
         <main className=" bg-white rounded p-8" key={index}>
           <div className=" pb-4">
             <div className="flex mb-10 items-center gap-3">
-              <img className="w-[30px] h-[30px]" src={item.image} alt="image" />
+              <img 
+                className="w-[30px] h-[30px]" 
+                src={item.image} 
+                alt="image" 
+              />
               <h1 className="text-2xl font-bold">{item.title}</h1>
             </div>
             <p>{item.description}</p>
