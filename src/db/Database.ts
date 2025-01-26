@@ -1,10 +1,17 @@
+import iconOne from '../assets/Icons/iconOne.svg'
+import iconTwo from '../assets/Icons/iconTwo.svg'
+import iconThree from '../assets/Icons/iconThree.svg'
+import iconFour from '../assets/Icons/iconFour.svg'
+import iconFive from '../assets/Icons/iconFive.svg'
+import iconSix from '../assets/Icons/iconSix.svg'
+
 export const Database = [
     
     {
-        id: 1,
+        id: 0,
         title: "Marketing Hub®",
         description: "AI-powered marketing software that helps you generate leads and automate marketing.",
-        image: "/images/marketing-hub.png",
+        image: {iconOne},
         h3: "Popular Features",
 
         list: [
@@ -18,7 +25,7 @@ export const Database = [
         id: 1,
         title: "Marketing Hub®",
         description: "AI-powered marketing software that helps you generate leads and automate marketing.",
-        image: "/images/marketing-hub.png",
+        image: {iconTwo},
         h3: "Popular Features",
 
         list: [
@@ -29,10 +36,10 @@ export const Database = [
         ]
     },
     {
-        id: 1,
+        id: 2,
         title: "Marketing Hub®",
         description: "AI-powered marketing software that helps you generate leads and automate marketing.",
-        image: "/images/marketing-hub.png",
+        image: {iconThree},
         h3: "Popular Features",
 
         list: [
@@ -43,10 +50,10 @@ export const Database = [
         ]
     },
     {
-        id: 1,
+        id: 3,
         title: "Marketing Hub®",
         description: "AI-powered marketing software that helps you generate leads and automate marketing.",
-        image: "/images/marketing-hub.png",
+        image: {iconFour},
         h3: "Popular Features",
 
         list: [
@@ -57,10 +64,10 @@ export const Database = [
         ]
     },
     {
-        id: 1,
+        id: 4,
         title: "Marketing Hub®",
         description: "AI-powered marketing software that helps you generate leads and automate marketing.",
-        image: "/images/marketing-hub.png",
+        image: {iconFive},
         h3: "Popular Features",
 
         list: [
@@ -71,10 +78,10 @@ export const Database = [
         ]
     },
     {
-        id: 1,
+        id: 5,
         title: "Marketing Hub®",
         description: "AI-powered marketing software that helps you generate leads and automate marketing.",
-        image: "/images/marketing-hub.png",
+        image: {iconSix},
         h3: "Popular Features",
 
         list: [
@@ -85,10 +92,10 @@ export const Database = [
         ]
     },
     {
-        id: 1,
+        id: 6,
         title: "Marketing Hub®",
         description: "AI-powered marketing software that helps you generate leads and automate marketing.",
-        image: "/images/marketing-hub.png",
+        image: {iconSix},
         h3: "Popular Features",
 
         list: [

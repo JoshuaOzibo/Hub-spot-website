@@ -3,9 +3,9 @@ const Footer = () => {
     <section className="bg-[#192733] py-20 lg:px-40 px-5">
       <main className="flex items-start">
         <div className="w-[40%] ">
-          <h3 className="font-bold text-white">Popular Features</h3>
-          <div className="flex items-start  justify-between">
-            <div>
+          <h3 className="font-bold text-white mb-5">Popular Features</h3>
+          <div className="flex items-start gap-5 justify-between">
+            <div className="space-y-3">
               <p>
                 <a href="##">All Products and Features</a>
               </p>
@@ -34,7 +34,7 @@ const Footer = () => {
                 <a href="##">Lead Management Software</a>
               </p>
             </div>
-            <div>
+            <div className="space-y-3">
               <p>
                 <a href="##">All Products and Features</a>
               </p>
@@ -69,8 +69,8 @@ const Footer = () => {
         {/* right section */}
         <div className=" flex justify-between lg:gap-10 gap-5 ml-10 w-[60%] pl-12 border-l border-gray-200 ">
           <div>
-            <h3 className="font-bold text-white">Free Tools</h3>
-            <div>
+            <h3 className="font-bold text-white mb-5">Free Tools</h3>
+            <div className="space-y-3">
               <p>
                 <a href="##">See All Free Business Tools</a>
               </p>
@@ -128,7 +128,7 @@ const Footer = () => {
             </div>
           </div>
           <div>
-            <h3 className="font-bold text-white">Company</h3>
+            <h3 className="font-bold text-white mb-5">Company</h3>
             <div>
               <p>
                 <a href="##">About Us</a>
@@ -154,8 +154,8 @@ const Footer = () => {
             </div>
           </div>
           <div>
-            <h3 className="font-bold text-white">Customers</h3>
-            <div>
+            <h3 className="font-bold text-white mb-5">Customers</h3>
+            <div className="space-y-3">
               <p>
                 <a href="##">Customer Support</a>
               </p>
@@ -163,8 +163,9 @@ const Footer = () => {
                 <a href="##">Join a Local User Group</a>
               </p>
             </div>
-            <div>
-              <h3 className="font-bold text-white">Partners</h3>
+            <div className="mt-64">
+              <h3 className="font-bold text-white mb-5">Partners</h3>
+              <div className="space-y-3">
               <p>
                 <a href="">All Partner Programs</a>
               </p>
@@ -180,6 +181,7 @@ const Footer = () => {
               <p>
                 <a href="">Affiliate Program</a>
               </p>
+              </div>
             </div>
           </div>
         </div>
@@ -201,16 +203,16 @@ const Footer = () => {
       <main className="bg-gray-200 my-8">
         <div>
           <h1 className="text-center">HubSpot</h1>
-          <p>Copyright © 2025 HubSpot, Inc.</p>
+          <p className="text-center text-sm font-semibold">Copyright © 2025 HubSpot, Inc.</p>
         </div>
-        <div>
-          <p>
-            <a href="">Legal Stuff</a>
-            <a href="">Privacy Policy</a>
-            <a href="">Security</a>
-            <a href="">Website Accessibility</a>
+        <div className="flex justify-center">
+          <div>
+            <a href="">Legal Stuff | </a>
+            <a href="">Privacy Policy | </a>
+            <a href="">Security | </a>
+            <a href="">Website Accessibility | </a>
             <a href="">Manage Cookies</a>
-          </p>
+          </div>
         </div>
       </main>
     </section>
