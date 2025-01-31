@@ -42,9 +42,9 @@ export default function YourWholeFront() {
           <Card />
         </div>
 
-        <div className="bg-white rounded p-8 mt-6">
-          <main className="lg:flex block items-center gap-6">
-            <div className="w-1/2">
+        <div className="bg-white lg:w-full md:w-[49%] rounded p-8 mt-6">
+          <main className="flex flex-col-reverse lg:flex-row items-center gap-6">
+            <div className="md:w-full lg:w-1/2 w-full">
               <h3 className="text-2xl mb-3 font-bold">Small Business Bundle</h3>
               <p>
                 The Starter edition of every HubSpot product, bundled together
@@ -58,7 +58,7 @@ export default function YourWholeFront() {
               />
             </div>
 
-            <div className="grid w-1/2 grid-cols-3 gap-2">
+            <div className="grid md:w-full lg:mb-0 mb-10 lg:w-1/2 w-full grid-cols-3 gap-2">
               <img src={LastCardIconOne} alt="LastCardIconOne" />
               <img src={LastCardIconOne} alt="LastCardIconOne" />
               <img src={LastCardIconOne} alt="LastCardIconOne" />
