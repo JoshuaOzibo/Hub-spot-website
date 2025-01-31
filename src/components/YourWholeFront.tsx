@@ -42,10 +42,10 @@ export default function YourWholeFront() {
           <Card />
         </div>
 
-        <div>
-          <main>
-            <div>
-              <h3>Small Business Bundle</h3>
+        <div className="bg-white rounded p-8 mt-6">
+          <main className="lg:flex block items-center gap-6">
+            <div className="w-1/2">
+              <h3 className="text-2xl mb-3 font-bold">Small Business Bundle</h3>
               <p>
                 The Starter edition of every HubSpot product, bundled together
                 at a discounted price for your startup or small business. Find
@@ -53,13 +53,18 @@ export default function YourWholeFront() {
                 organize customer data — all on one unified platform.
               </p>
               <Button
-                className="w-full bg-[#ff5c35] py-4 text-base font-bold text-white"
+                className="w-full mt-8 bg-[#ff5c35] py-4 text-base font-bold text-white"
                 value="Learn more"
               />
             </div>
 
-            <div>
-              <img src="" alt="" />
+            <div className="grid w-1/2 grid-cols-3 gap-2">
+              <img src={LastCardIconOne} alt="LastCardIconOne" />
+              <img src={LastCardIconOne} alt="LastCardIconOne" />
+              <img src={LastCardIconOne} alt="LastCardIconOne" />
+              <img src={LastCardIconOne} alt="LastCardIconOne" />
+              <img src={LastCardIconOne} alt="LastCardIconOne" />
+              <img src={LastCardIconOne} alt="LastCardIconOne" />
             </div>
           </main>
         </div>
