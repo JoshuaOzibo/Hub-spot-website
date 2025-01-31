@@ -5,13 +5,6 @@ import iconFour from "../assets/Icons/iconFour.svg";
 import iconFive from "../assets/Icons/iconFive.svg";
 import iconSix from "../assets/Icons/iconSix.svg";
 
-// lastCardImages
-import LastCardIconOne from "../assets/Icons/lastCardIcons/lastIconOne.webp";
-import LastCardIconTwo from "../assets/Icons/lastCardIcons/lastIconTwo.webp";
-import LastCardIconThree from "../assets/Icons/lastCardIcons/lastIconThree.webp";
-import LastCardIconFour from "../assets/Icons/lastCardIcons/lastIconFour.webp";
-import LastCardIconFive from "../assets/Icons/lastCardIcons/lastIconFive.webp";
-import LastCardIconSix from "../assets/Icons/lastCardIcons/lastIconSix.webp";
 
 export const Database = [
   {
@@ -90,29 +83,6 @@ export const Database = [
     description:
       "AI-powered marketing software that helps you generate leads and automate marketing.",
     image: `${iconSix}`,
-    h3: "Popular Features",
-
-    list: [
-      { p: "Breeze social media agent" },
-      { p: " Marketing automation" },
-      { p: "Analytics" },
-    ],
-  },
-  {
-    id: 6,
-    title: "Marketing Hub®",
-    description:
-      "AI-powered marketing software that helps you generate leads and automate marketing.",
-    images: [
-      {
-        image: `${LastCardIconOne}`,
-        imageTwo: `${LastCardIconTwo}`,
-        imageThree: `${LastCardIconThree}`,
-        imageFour: `${LastCardIconFour}`,
-        imageFive: `${LastCardIconFive}`,
-        imageSix: `${LastCardIconSix}`,
-      },
-    ],
     h3: "Popular Features",
 
     list: [
