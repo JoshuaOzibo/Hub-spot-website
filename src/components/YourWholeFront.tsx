@@ -60,11 +60,11 @@ export default function YourWholeFront() {
 
             <div className="grid md:w-full lg:mb-0 mb-10 lg:w-1/2 w-full grid-cols-3 gap-2">
               <img src={LastCardIconOne} alt="LastCardIconOne" />
-              <img src={LastCardIconOne} alt="LastCardIconOne" />
-              <img src={LastCardIconOne} alt="LastCardIconOne" />
-              <img src={LastCardIconOne} alt="LastCardIconOne" />
-              <img src={LastCardIconOne} alt="LastCardIconOne" />
-              <img src={LastCardIconOne} alt="LastCardIconOne" />
+              <img src={LastCardIconTwo} alt="LastCardIconTwo" />
+              <img src={LastCardIconThree} alt="LastCardIconThree" />
+              <img src={LastCardIconFour} alt="LastCardIconFour" />
+              <img src={LastCardIconFive} alt="LastCardIconFive" />
+              <img src={LastCardIconSix} alt="LastCardIconSix" />
             </div>
           </main>
         </div>
