@@ -1,7 +1,7 @@
 import Button from "./Button";
 import { IoIosArrowDown } from "react-icons/io";
 import HubspotFullLogo from "../assets/logo/Hubspot_Full_Logo.svg";
-import HubspotLogo from "../assets/logo/Hubspot_Logo.svg";
+// import HubspotLogo from "../assets/logo/Hubspot_Logo.svg";
 
 const Navbar = () => {
   return (
@@ -11,7 +11,7 @@ const Navbar = () => {
           <img src={HubspotFullLogo} alt="HubspotLogo" className="w-20 h-10" />
         </a>
 
-        <ul className="flex items-center gap-4">
+        <ul className="lg:flex hidden items-center gap-4">
           <li className=" flex items-center gap-1">
             <p className="text-base font-medium text-[#213343]">Products</p>
             <IoIosArrowDown />
@@ -31,7 +31,7 @@ const Navbar = () => {
         </ul>
       </div>
 
-      <div className="flex items-center gap-4">
+      <div className="lg:flex hidden items-center gap-4">
         <Button
           className=" bg-[#ff5c35] font-bold text-[#fff] py-2 px-4 "
           value="Get a demo"
