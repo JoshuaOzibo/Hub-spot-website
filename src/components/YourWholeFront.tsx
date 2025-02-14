@@ -26,7 +26,7 @@ export default function YourWholeFront() {
             powerful on its own, but the real magic happens when you use them
             together.
           </p>
-          <div className="flex justify-center gap-4">
+          <div className="flex md:flex-row flex-col justify-center gap-4">
             <Button
               className=" px-5 font-bold bg-[#ff5c35] text-white py-4"
               value="Get a demo"
