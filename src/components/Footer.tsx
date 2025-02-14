@@ -1,7 +1,26 @@
+// icons
+import { FaFacebookF } from "react-icons/fa";
+import { FiInstagram } from "react-icons/fi";
+import { FaYoutube } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import { FaLinkedinIn } from "react-icons/fa";
+import { BiLogoMediumOld } from "react-icons/bi";
+import { AiOutlineTikTok } from "react-icons/ai";
+
+
+
+
+
+
 const Footer = () => {
   return (
-    <section className="bg-[#192733] py-20 lg:px-40 px-5">
-      <main className="flex items-start">
+    <section className="bg-[#192733] py-10 lg:px-40 px-5">
+      {/* mobile */}
+      <main>
+
+      </main>
+      {/* large */}
+      <main className="md:flex hidden items-start">
         <div className="w-[40%] ">
           <h3 className="font-bold text-white mb-5">Popular Features</h3>
           <div className="flex items-start gap-5 justify-between">
@@ -186,18 +205,18 @@ const Footer = () => {
           </div>
         </div>
       </main>
-      <main>
-        <div></div>
-        <div>
-          <img src="" alt="" />
-          <img src="" alt="" />
-          <img src="" alt="" />
-          <img src="" alt="" />
-          <img src="" alt="" />
-          <img src="" alt="" />
-          <img src="" alt="" />
+      <main className=" py-10 flex gap-10 items-center">
+        <div className="h-0.5 w-1/2 bg-[#c4c4c4] md:block hidden"></div>
+        <div className="flex m-auto space-x-8">
+          <FaFacebookF size={25} color="#c4c4c4" />
+          <FiInstagram size={25} color="#c4c4c4" />
+          <FaYoutube size={25} color="#c4c4c4" />
+          <FaXTwitter size={25} color="#c4c4c4" />
+          <FaLinkedinIn size={25} color="#c4c4c4" />
+          <BiLogoMediumOld size={25} color="#c4c4c4" />
+          <AiOutlineTikTok size={25} color="#c4c4c4" />
         </div>
-        <div></div>
+        <div className="h-0.5 w-1/2 bg-[#c4c4c4] md:block hidden"></div>
       </main>
 
       <main className="bg-gray-200 my-8">
