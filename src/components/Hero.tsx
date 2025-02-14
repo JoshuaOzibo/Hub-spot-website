@@ -16,13 +16,13 @@ export default function Hero() {
             into your competitive edge.
           </p>
 
-          <div className="flex items-center gap-4">
+          <div className="flex md:flex-row flex-col items-center gap-4">
             <Button
-              className="px-6 py-4 bg-[#ff5c35] text-[#fff] font-bold"
+              className="px-6 py-4 md:w-auto w-full bg-[#ff5c35] text-[#fff] font-bold"
               value="Get a demo"
             />
             <Button
-              className="px-6 py-4 text-[#ff5c35] font-semibold"
+              className="px-6 py-4 md:w-auto w-full text-[#ff5c35] font-semibold"
               value="Get started free"
             />
           </div>
