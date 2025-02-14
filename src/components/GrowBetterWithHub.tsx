@@ -44,13 +44,13 @@ const GrowBetterWithHub = () => {
         </div>
         <div className=" bg-white border-2 border-gray-200  rounded p-8">
           {/* image */}
-          <div className="grid -mt-4 grid-cols-4 lg:px-5 space-y-5 gap-5 w-full place-items-center">
+          <div className="grid -mt-4 grid-cols-3 lg:px-5 space-y-5 gap-5 w-full place-items-center">
             <img className="col-span-1 w-[70px]" src={awardImageOne} alt="awardImageOne" />
             <img className="col-span-1 w-[70px]" src={awardImageTwo} alt="awardImageTwo" />
             <img className="col-span-1 w-[70px]" src={awardImageThree} alt="awardImageThree" />
             <img className="col-span-1 w-[70px]" src={awardImageFour} alt="awardImageFour" />
             <img className="w-[70px] col-span-1" src={awardImageFive} alt="awardImageFive" />
-            <img className="lg:col-span-1 w-[70px]" src={awardImageSix} alt="awardImageSix" />
+            <img className=" col-span-1 w-[70px]" src={awardImageSix} alt="awardImageSix" />
           </div>
 
           {/* 300 389 */}
@@ -67,12 +67,12 @@ const GrowBetterWithHub = () => {
       </main>
 
       <main className="bg-[#ffffff] lg:px-40 px-5 py-20">
-        <div className="md:flex justify-between items-center">
-          <div>
+        <div className="md:flex md:space-y-0 space-y-10 block m-auto justify-between items-center">
+          <div className="text-center">
             <h3 className="text-2xl font-bold">
               Grow better with HubSpot today
             </h3>
-            <div className="space-x-5 space-y-5">
+            <div className="space-x-5 md:mt-0 mt-5 space-y-5">
               <Button
                 className=" px-10 font-bold bg-[#ff5c35] text-white py-4"
                 value="Get a demo"
@@ -84,7 +84,7 @@ const GrowBetterWithHub = () => {
             </div>
           </div>
 
-          <img className=" w-1/3" src={growBetterRightImage} alt="growBetterRightImage" />
+          <img className="md:m-0  m-auto w-1/3" src={growBetterRightImage} alt="growBetterRightImage" />
         </div>
       </main>
     </section>

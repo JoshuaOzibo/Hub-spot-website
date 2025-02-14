@@ -6,6 +6,7 @@ import { FaXTwitter } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa";
 import { BiLogoMediumOld } from "react-icons/bi";
 import { AiOutlineTikTok } from "react-icons/ai";
+import FooterMobileSection from "./FooterMobileSection";
 
 
 
@@ -14,10 +15,10 @@ import { AiOutlineTikTok } from "react-icons/ai";
 
 const Footer = () => {
   return (
-    <section className="bg-[#192733] py-10 lg:px-40 px-5">
+    <section className="bg-[#192733] py-10 lg:px-40">
       {/* mobile */}
-      <main>
-
+      <main className="md:hidden block">
+        <FooterMobileSection />
       </main>
       {/* large */}
       <main className="md:flex hidden items-start">
