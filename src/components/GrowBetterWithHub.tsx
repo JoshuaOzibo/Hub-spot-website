@@ -84,7 +84,7 @@ const GrowBetterWithHub = () => {
             </div>
           </div>
 
-          <img className="md:m-0  m-auto w-1/3" src={growBetterRightImage} alt="growBetterRightImage" />
+          <img className="md:m-0  m-auto md:w-1/3" src={growBetterRightImage} alt="growBetterRightImage" />
         </div>
       </main>
     </section>
