@@ -6,8 +6,8 @@ export default function () {
   return (
     <section className="bg-[#f6f9fc] py-20 w-full lg:px-40 px-4">
       <main className="md:flex block space-y-7 items-center gap-2 justify-between">
-        <div className="bg-black relative lg:w-1/2 md:w-[50%]">
-          <img src={HowHubspotWorks_Image} alt="HubspotImage" />
+        <div className="bg-black relative lg:w-1/2 z-10 md:w-[50%]">
+          <img src={HowHubspotWorks_Image} alt="HubspotImage" className="z-10"/>
           <div className="absolute cursor-pointer top-1/2 w-16 h-16 bg-[#fc7756] rounded-full left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-4xl">
             <IoMdPlay
               color="#fff"

@@ -23,8 +23,8 @@ const Card = () => {
           <div className="space-y-4">
             <h3 className="text-xl font-medium">{item.h3}</h3>
             <ul className="space-y-1 pb-4">
-              {item.list.map((item) => (
-                <div className="flex items-center">
+              {item.list.map((item, index) => (
+                <div key={index} className="flex items-center">
                   <img src="" alt="" />
                   <p>{item.p}</p>
                 </div>

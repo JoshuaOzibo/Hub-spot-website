@@ -11,8 +11,6 @@ import FooterMobileSection from "./FooterMobileSection";
 
 
 
-
-
 const Footer = () => {
   return (
     <section className="bg-[#192733] py-10 lg:px-40">
