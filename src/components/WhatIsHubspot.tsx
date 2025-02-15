@@ -4,7 +4,7 @@ import { IoMdPlay } from "react-icons/io";
 
 export default function () {
   return (
-    <section className="bg-[#f6f9fc] w-full lg:px-40 px-4">
+    <section className="bg-[#f6f9fc] py-20 w-full lg:px-40 px-4">
       <main className="md:flex block space-y-7 items-center gap-2 justify-between">
         <div className="bg-black relative lg:w-1/2 md:w-[50%]">
           <img src={HowHubspotWorks_Image} alt="HubspotImage" />
@@ -27,7 +27,7 @@ export default function () {
       ></video> */}
 
         <div className="md:w-[45%] text-start">
-          <h3 className="text-2xl font-bold">What is HubSpot?</h3>
+          <h3 className="text-2xl mb-2 font-bold">What is HubSpot?</h3>
           <div className="space-y-4">
             <p className="text-base">
               HubSpot is an AI-powered customer platform with all the software,
