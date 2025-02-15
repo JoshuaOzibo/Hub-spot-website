@@ -24,10 +24,10 @@ const Footer = () => {
       <main className="md:flex hidden items-start">
         <div className="w-[40%] ">
           <h3 className="font-bold text-white mb-5">Popular Features</h3>
-          <div className="flex items-start gap-5 justify-between">
+          <div className="flex text-[#c4c4c4] items-start gap-5 justify-between">
             <div className="space-y-3">
               <p>
-                <a href="##">All Products and Features</a>
+                <a className="" href="##">All Products and Features</a>
               </p>
               <p>
                 <a href="##">Free Meeting Schedular App</a>
@@ -87,7 +87,7 @@ const Footer = () => {
         </div>
 
         {/* right section */}
-        <div className=" flex justify-between lg:gap-10 gap-5 ml-10 w-[60%] pl-12 border-l border-gray-200 ">
+        <div className=" text-[#c4c4c4] flex justify-between lg:gap-10 gap-5 ml-10 w-[60%] pl-12 border-l border-gray-200 ">
           <div>
             <h3 className="font-bold text-white mb-5">Free Tools</h3>
             <div className="space-y-3">

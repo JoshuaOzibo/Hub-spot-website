@@ -4,7 +4,7 @@ import HeroImage from "../assets/Images/Hero_image.webp";
 export default function Hero() {
   return (
     <section className=" bg-[#fef4ea] flex justify-center lg:px-40 px-5 md:py-40 py-10">
-      <main className="lg:flex m-auto items-center justify-between w-full">
+      <main className="md:flex m-auto items-center justify-between w-full">
         <div className="w-full">
           <p className="text-sm w-full font-bold">HUBSPOT CUSTOMER PLATFORM</p>
           <h1 className="md:text-5xl text-3xl font-bold">
@@ -32,7 +32,7 @@ export default function Hero() {
         </div>
 
         <img
-          className=" w-full lg:w-1/2 m-auto sm:block hidden right-0"
+          className=" w-full md:w-1/2 m-auto sm:block hidden right-0"
           src={HeroImage}
           alt="HeroImage"
         />
