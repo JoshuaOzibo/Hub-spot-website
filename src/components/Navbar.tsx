@@ -2,16 +2,35 @@ import Button from "./Button";
 import { IoIosArrowDown } from "react-icons/io";
 import HubspotFullLogo from "../assets/logo/Hubspot_Full_Logo.svg";
 import { TbMenu4 } from "react-icons/tb";
-import { TiMicrophone } from "react-icons/ti";
 import { CgOptions } from "react-icons/cg";
 import { MdMessage } from "react-icons/md";
 import { HiUser } from "react-icons/hi2";
 import { IoIosSearch } from "react-icons/io";
 import { useEffect, useState } from "react";
 import MobileNavLogo from "../assets/logo/hubSpotNavMobile.svg";
+import LanguageSelector from "./LanguageSelector";
 
 const Navbar = () => {
   const [isFixed, setIsFixed] = useState(false);
+  const [selectedLanguage, setSelectedLanguage] = useState("English");
+  const [selectedAboutUs, setSelectedAboutUs] = useState("About Us");
+
+  const languages = [
+    "English",
+    "Español",
+    "Français",
+    "Deutsch",
+    "Português",
+    "日本語",
+    "한국어",
+  ];
+  const AboutUs = [
+    "About Us",
+    "Careers",
+    "Contact Us",
+    "Investor Relations",
+    "Management Team",
+  ];
 
   useEffect(() => {
     const handleScroll = () => {
@@ -33,11 +52,11 @@ const Navbar = () => {
     <section className="bg-white z-50 w-full">
       <main className="flex justify-between lg:px-40 sm:px-4 px-2 py-3 items-center">
         <div className="flex items-center gap-4">
-          <div className="flex cursor-pointer items-center gap-1">
-            <TiMicrophone />
-            <p className="text-sm font-medium">English</p>
-            <IoIosArrowDown />
-          </div>
+          <LanguageSelector
+            languages={languages}
+            selectedLanguage={selectedLanguage}
+            onLanguageChange={setSelectedLanguage}
+          />
           <div className="flex cursor-pointer items-center gap-1">
             <CgOptions />
             <p className="text-sm font-medium">High Contrast</p>
@@ -54,9 +73,13 @@ const Navbar = () => {
 
         {/* right */}
         <div className="flex items-center gap-4">
-          <IoIosSearch />
+          <IoIosSearch  />
           <p>Login</p>
-          <p>About</p>
+          <LanguageSelector
+            languages={AboutUs}
+            selectedLanguage={selectedAboutUs}
+            onLanguageChange={setSelectedAboutUs}
+          />
         </div>
       </main>
       <nav
