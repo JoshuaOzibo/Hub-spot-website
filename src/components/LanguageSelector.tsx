@@ -7,12 +7,14 @@ interface LanguageSelectorProps {
   selectedLanguage: string;
   onLanguageChange: (language: string) => void;
   icon?: React.ReactNode;
+  selectedItem: string;
 }
 
 const LanguageSelector = ({ 
   languages, 
   selectedLanguage, 
   onLanguageChange,
+  selectedItem,
   icon = <TiMicrophone />
 }: LanguageSelectorProps) => {
   const languageContent = (
@@ -33,7 +35,7 @@ const LanguageSelector = ({
     <>
       <div 
         className="flex cursor-pointer items-center gap-1"
-        data-tooltip-id="language-tooltip"
+        data-tooltip-id={`${selectedItem}-tooltip`}
         data-tooltip-place="bottom"
       >
         {icon}
@@ -41,8 +43,8 @@ const LanguageSelector = ({
         <IoIosArrowDown />
       </div>
       <Tooltip
-        id="language-tooltip"
-        className="!bg-white text-black shadow-lg rounded-md !opacity-100 !p-0"
+        id={`${selectedItem}-tooltip`}
+        className="!bg-white border border-black text-black shadow-lg rounded-md !opacity-100 !p-0"
         clickable={true}
       >
         {languageContent}
