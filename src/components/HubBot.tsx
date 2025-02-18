@@ -9,7 +9,7 @@ const HubBot = () => {
   >([]);
   const [isLoading, setIsLoading] = useState(false);
 
-  const client = new HfInference(process.env.NEXT_PUBLIC_HUGGING_FACE_API_KEY); // Replace with your API key
+  const client = new HfInference(import.meta.env.VITE_HUGGING_FACE_API_KEY);
 
   const handleSendMessage = async () => {
     if (!message.trim() || isLoading) return;

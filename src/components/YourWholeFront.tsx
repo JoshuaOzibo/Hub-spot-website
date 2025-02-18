@@ -7,7 +7,7 @@ import LastCardIconThree from "../assets/Icons/lastCardIcons/lastIconThree.webp"
 import LastCardIconFour from "../assets/Icons/lastCardIcons/lastIconFour.webp";
 import LastCardIconFive from "../assets/Icons/lastCardIcons/lastIconFive.webp";
 import LastCardIconSix from "../assets/Icons/lastCardIcons/lastIconSix.webp";
-import YourWholeFrontImage from "../assets/Images/";
+import YourWholeFrontImage from "../assets/Images/YourWholeFontImage.webp";
 export default function YourWholeFront() {
   return (
     <section className="bg-[#fef4ea] w-full py-5 lg:px-40 px-4">
