@@ -8,7 +8,7 @@ import { HiUser } from "react-icons/hi2";
 import { IoIosSearch } from "react-icons/io";
 import { useEffect, useState } from "react";
 import MobileNavLogo from "../assets/logo/hubSpotNavMobile.svg";
-import LanguageSelector from "./LanguageSelector";
+import Dropdown from "./Dropdown";
 
 const Navbar = () => {
   const [isFixed, setIsFixed] = useState(false);
@@ -50,12 +50,13 @@ const Navbar = () => {
 
   return (
     <section className="bg-white z-50 w-full">
-      <main className="flex justify-between lg:px-40 sm:px-4 px-2 py-3 items-center">
+      <main className="md:flex hidden justify-between w-full lg:px-40 sm:px-4 px-2 py-3 items-center">
         <div className="flex items-center gap-4">
-          <LanguageSelector
-            languages={languages}
-            selectedLanguage={selectedLanguage}
-            onLanguageChange={setSelectedLanguage}
+          <Dropdown
+            options={languages}
+            selectedOption={selectedLanguage}
+            onOptionChange={setSelectedLanguage}
+            type="language"
           />
           <div className="flex cursor-pointer items-center gap-1">
             <CgOptions />
@@ -73,18 +74,19 @@ const Navbar = () => {
 
         {/* right */}
         <div className="flex items-center gap-4">
-          <IoIosSearch  />
+          <IoIosSearch />
           <p>Login</p>
-          <LanguageSelector
-            languages={AboutUs}
-            selectedLanguage={selectedAboutUs}
-            onLanguageChange={setSelectedAboutUs}
+          <Dropdown
+            options={AboutUs}
+            selectedOption={selectedAboutUs}
+            onOptionChange={setSelectedAboutUs}
+            type="about"
           />
         </div>
       </main>
       <nav
         className={`flex bg-white w-full shadow-lg lg:px-40 sm:px-4 px-2 py-4 items-center justify-between ${
-          isFixed ? "fixed -mt-12" : ""
+          isFixed ? "fixed top-0" : ""
         }`}
       >
         <div className="flex transition-all duration-300 items-center gap-8">
