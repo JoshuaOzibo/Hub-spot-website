@@ -42,7 +42,7 @@ export default function YourWholeFront() {
           <Card />
         </div>
 
-        <div className="bg-white lg:w-full md:w-[49%] rounded p-8 mt-6">
+        <div className="bg-white hover:bg-gray-100 cursor-pointer transition-all hover:scale-[102%] duration-300 lg:w-full md:w-[49%] rounded p-8 mt-6">
           <main className="flex flex-col-reverse lg:flex-row items-center gap-6">
             <div className="md:w-full lg:w-1/2 w-full">
               <h3 className="text-2xl mb-3 font-bold">Small Business Bundle</h3>

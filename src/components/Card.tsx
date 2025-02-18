@@ -5,7 +5,7 @@ const Card = () => {
   return (
     <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       {Database.map((item, index) => (
-        <main className=" bg-white rounded p-8" key={index}>
+        <main className=" hover:bg-gray-100 cursor-pointer transition-all hover:scale-[102%] duration-300 bg-white rounded p-8" key={index}>
           <div className=" pb-4">
             <div className="flex mb-10 items-center gap-3">
               <img 
