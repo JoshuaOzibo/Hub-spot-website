@@ -20,7 +20,7 @@ import awardImageSix from '../assets/Images/winnerAward_6.webp'
 
 const GrowBetterWithHub = () => {
   return (
-    <section className="bg-[#f6f9fc]">
+    <section className="bg-[#f6f9fc] px-4">
       <main className="grid grid-cols-1 lg:px-40 py-24 md:grid-cols-2 gap-6">
         <div className="  bg-white border-2 border-gray-200  rounded p-8">
           {/* image */}
@@ -67,8 +67,8 @@ const GrowBetterWithHub = () => {
       </main>
 
       <main className="bg-[#ffffff] lg:px-40 px-5 py-20">
-        <div className="md:flex md:space-y-0 space-y-10 block m-auto justify-between items-center">
-          <div className="text-center">
+        <div className="flex flex-col-reverse gap-10 md:flex-row m-auto justify-between items-center">
+          <div className="text-center space-y-5">
             <h3 className="text-2xl font-bold">
               Grow better with HubSpot today
             </h3>
@@ -84,7 +84,7 @@ const GrowBetterWithHub = () => {
             </div>
           </div>
 
-          <img className="md:m-0  m-auto md:w-1/3" src={growBetterRightImage} alt="growBetterRightImage" />
+          <img className="md:m-0 m-auto md:w-1/3" src={growBetterRightImage} alt="growBetterRightImage" />
         </div>
       </main>
     </section>

@@ -14,6 +14,7 @@ import HubBot from "./components/HubBot";
 import WantToChatCircle from "./components/WantToChatCircle";
 const App = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isOpen2, setIsOpen2] = useState(false);
 
   return (
     <div style={{ position: 'relative', minHeight: '100vh' }}>
@@ -23,8 +24,8 @@ const App = () => {
       {!isOpen && <div style={{ position: 'fixed', bottom: '110px', right: '20px', zIndex: 1000, boxShadow: '0 0 10px 0 rgba(0, 0, 0, 0.4)' }}>
         <HubBot />
       </div>}
-      {isOpen && <div style={{ position: 'fixed', bottom: '80px', right: '20px', zIndex: 1000, }}>
-        <WantToChatCircle setIsOpen={setIsOpen} />
+      {!isOpen2 && <div style={{ position: 'fixed', bottom: '80px', right: '20px', zIndex: 1000, }}>
+        <WantToChatCircle setIsOpen={setIsOpen2} isOpen={isOpen2} />
       </div>}
       <Navbar />
       <Hero />

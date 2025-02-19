@@ -50,7 +50,7 @@ const Navbar = () => {
 
   return (
     <section className="bg-white z-50 w-full">
-      <main className="md:flex hidden justify-between w-full lg:px-40 sm:px-4 px-2 py-3 items-center">
+      <main className="lg:flex hidden justify-between w-full lg:px-40 sm:px-4 px-2 py-3 items-center">
         <div className="flex items-center gap-4">
           <Dropdown
             options={languages}
@@ -96,19 +96,19 @@ const Navbar = () => {
           </a>
 
           <ul className="md:flex hidden items-center gap-4">
-            <li className=" flex items-center gap-1">
+            <li className=" flex cursor-pointer items-center gap-1">
               <p className="text-base font-medium text-[#213343]">Products</p>
               <IoIosArrowDown />
             </li>
-            <li className=" flex items-center gap-1">
+            <li className=" flex cursor-pointer items-center gap-1">
               <p className="text-base font-medium text-[#213343]">Solutions</p>
               <IoIosArrowDown />
             </li>
-            <li className=" flex items-center gap-1">
+            <li className=" flex cursor-pointer items-center gap-1">
               <p className="text-base font-medium text-[#213343]">Pricing</p>
               <IoIosArrowDown />
             </li>
-            <li className=" flex items-center gap-1">
+            <li className=" flex cursor-pointer items-center gap-1">
               <p className="text-base font-medium text-[#213343]">Resources</p>
               <IoIosArrowDown />
             </li>
