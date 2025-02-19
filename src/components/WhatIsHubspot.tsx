@@ -42,11 +42,11 @@ export default function () {
             </p>
             <div className="w-full flex flex-col md:flex-row gap-4">
               <Button
-                className="w-full px-5 font-bold bg-[#ff5c35] text-white py-4"
+                className="w-full hover:bg-[#ee4318] px-5 font-bold bg-[#ff5c35] text-white py-4"
                 value="Get a demo"
               />
               <Button
-                className="w-full px-8 font-semibold text-[#fc7756] py-4"
+                className="w-full px-8 hover:bg-[#ffe9e3] font-semibold text-[#fc7756] py-4"
                 value="Get started free"
               />
             </div>

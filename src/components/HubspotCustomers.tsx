@@ -39,7 +39,7 @@ const HubspotCustomers = () => {
           HubSpot customers see improvement across their customer journey. What
           could your ROI be?
         </h3>
-        <Button value="see ROI report" className="border-none font-semibold text-xl bg-white px-8 py-4 m-auto" />
+        <Button value="see ROI report" className="border-none hover:bg-[#9dc5e7] font-semibold text-xl bg-white px-8 py-4 m-auto" />
       </div>
     </section>
   );

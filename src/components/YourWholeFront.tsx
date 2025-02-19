@@ -28,11 +28,11 @@ export default function YourWholeFront() {
           </p>
           <div className="flex md:flex-row flex-col justify-center gap-4">
             <Button
-              className=" px-5 font-bold bg-[#ff5c35] text-white py-4"
+              className=" hover:bg-[#ee4318] px-5 font-bold bg-[#ff5c35] text-white py-4"
               value="Get a demo"
             />
             <Button
-              className=" px-8 font-semibold text-[#fc7756] py-4"
+              className=" hover:bg-[#ffe9e3] px-8 font-semibold text-[#fc7756] py-4"
               value="Get started free"
             />
           </div>
@@ -53,7 +53,7 @@ export default function YourWholeFront() {
                 organize customer data — all on one unified platform.
               </p>
               <Button
-                className="w-full mt-8 bg-[#ff5c35] py-4 text-base font-bold text-white"
+                className="w-full mt-8 hover:bg-[#ee4318] bg-[#ff5c35] py-4 text-base font-bold text-white"
                 value="Learn more"
               />
             </div>

@@ -31,7 +31,7 @@ const Card = () => {
               ))}
             </ul>
             <Button
-              className="w-full bg-[#ff5c35] py-4 text-base font-bold text-white"
+              className="w-full hover:bg-[#ee4318] bg-[#ff5c35] py-4 text-base font-bold text-white"
               value="Learn more"
             />
           </div>

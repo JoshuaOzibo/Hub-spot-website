@@ -7,9 +7,9 @@ export default function MeetBreeze (){
                 
                 <p className=" text-lg text-center font-light">Use Breeze Copilot to assist with tasks, Breeze Agents to automate your work, Breeze Intelligence to enrich your data, and a growing list of Breeze features to help you get work done faster.</p>
                 <div className="w-full mt-5 flex justify-center">
-                <Button className=" px-8 m-auto bg-white font-bold text-[#fc7756] py-4" value="Learn more" />
+                <Button className=" px-8 m-auto hover:bg-[#ffe9e3] bg-white font-bold text-[#fc7756] py-4" value="Learn more" />
                 </div>
             
         </section>
     )
-}
+};
