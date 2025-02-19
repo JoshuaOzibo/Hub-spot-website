@@ -11,8 +11,10 @@ import GrowBetterWithHub from "./components/GrowBetterWithHub";
 import Footer from './components/Footer'
 import MessageButton from "./components/MessageButton";
 import HubBot from "./components/HubBot";
+import WantToChatCircle from "./components/WantToChatCircle";
 const App = () => {
   const [isOpen, setIsOpen] = useState(false);
+
   return (
     <div style={{ position: 'relative', minHeight: '100vh' }}>
       <div style={{ position: 'fixed', bottom: '20px', right: '20px', zIndex: 1000, }}>
@@ -20,6 +22,9 @@ const App = () => {
       </div>
       {!isOpen && <div style={{ position: 'fixed', bottom: '110px', right: '20px', zIndex: 1000, boxShadow: '0 0 10px 0 rgba(0, 0, 0, 0.4)' }}>
         <HubBot />
+      </div>}
+      {isOpen && <div style={{ position: 'fixed', bottom: '80px', right: '20px', zIndex: 1000, }}>
+        <WantToChatCircle setIsOpen={setIsOpen} />
       </div>}
       <Navbar />
       <Hero />
