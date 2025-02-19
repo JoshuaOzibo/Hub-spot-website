@@ -7,6 +7,9 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { BiLogoMediumOld } from "react-icons/bi";
 import { AiOutlineTikTok } from "react-icons/ai";
 import FooterMobileSection from "./FooterMobileSection";
+import HubspotFooterImage from "../assets/logo/HubspotFooterImage.svg";
+import appleLogoImg from "../assets/Images/apple-image-logo.webp";
+import PlayStoreLogoImg from "../assets/Images/google-play-logo.webp";
 
 
 
@@ -18,7 +21,7 @@ const Footer = () => {
       <main className="md:hidden block">
         <FooterMobileSection />
       </main>
-      {/* large */}
+      {/* large */} 
       <main className="md:flex hidden items-start">
         <div className="w-[40%] ">
           <h3 className="font-bold text-white mb-5">Popular Features</h3>
@@ -218,18 +221,24 @@ const Footer = () => {
         <div className="h-0.5 w-1/2 bg-[#c4c4c4] md:block hidden"></div>
       </main>
 
-      <main className="bg-gray-200 my-8">
-        <div>
-          <h1 className="text-center">HubSpot</h1>
-          <p className="text-center text-sm font-semibold">Copyright © 2025 HubSpot, Inc.</p>
+      <main className=" my-8">
+        <div className="flex justify-center gap-3 my-12">
+          <img src={appleLogoImg} alt="appleLogoImg" />
+          <img src={PlayStoreLogoImg} alt="PlayStoreLogoImg" />
         </div>
-        <div className="flex justify-center">
-          <div>
-            <a href="">Legal Stuff | </a>
-            <a href="">Privacy Policy | </a>
-            <a href="">Security | </a>
-            <a href="">Website Accessibility | </a>
-            <a href="">Manage Cookies</a>
+        <div className="space-y-2">
+          
+            <img className="w-[100px] m-auto" src={HubspotFooterImage} alt="HubspotFooterImage" />
+         
+          <p className="text-center text-sm text-[#c4c4c4] font-semibold">Copyright © 2025 HubSpot, Inc.</p>
+        </div>
+        <div className=" bg-slate-500 flex w-full mt-2">
+          <div className="md:space-x-3 md:flex grid grid-cols-3">
+            <a className="text-white" href="">Legal Stuff |</a>
+            <a className="text-white" href="">Privacy Policy |</a>
+            <a className="text-white" href="">Security |</a>
+            <a className="text-white" href="">Website Accessibility |</a>
+            <a className="text-white" href="">Manage Cookies</a>
           </div>
         </div>
       </main>
