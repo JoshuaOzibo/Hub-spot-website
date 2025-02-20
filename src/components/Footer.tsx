@@ -232,13 +232,23 @@ const Footer = () => {
          
           <p className="text-center text-sm text-[#c4c4c4] font-semibold">Copyright © 2025 HubSpot, Inc.</p>
         </div>
-        <div className=" bg-slate-500 flex w-full mt-2">
-          <div className="md:space-x-3 md:flex grid grid-cols-3">
-            <a className="text-white" href="">Legal Stuff |</a>
-            <a className="text-white" href="">Privacy Policy |</a>
-            <a className="text-white" href="">Security |</a>
-            <a className="text-white" href="">Website Accessibility |</a>
-            <a className="text-white" href="">Manage Cookies</a>
+        <div className=" flex w-[100%] text-center m-auto mt-2">
+          <div className="grid lg:grid-cols-5 md:grid-cols-3 grid-cols-2 gap-5 w-full">
+            <div className="w-full border-r border-gray-200">
+            <a className="text-white text-sm font-semibold" href="##">Legal Stuff </a>
+            </div>
+            <div className="w-full border-r border-gray-200">
+            <a className="text-white text-sm font-semibold" href="##">Privacy Policy  </a>
+            </div>
+            <div className="w-full border-r border-gray-200">
+            <a className="text-white text-sm font-semibold" href="##">Security  </a>
+            </div>
+            <div className="w-full border-r border-gray-200">
+            <a className="text-white text-sm font-semibold" href="##">Website Accessibility  </a>
+            </div>
+            <div >
+            <a className="text-white text-sm font-semibold" href="##">Manage Cookies</a>
+            </div>
           </div>
         </div>
       </main>
