@@ -46,8 +46,8 @@ const Navbar = () => {
 
       {/* Main Navbar */}
       <nav
-        className={`flex bg-white border-b w-full shadow-lg lg:px-40 sm:px-4 px-2 items-center justify-between ${
-          isFixed ? "fixed top-0 border-b" : ""
+        className={`flex bg-white border-b w-full shadow-lg lg:px-40 sm:px-4 px-2 justify-between ${
+          isFixed ? "fixed top-0 border-b py-5" : ""
         }`}
       >
         <div className="flex items-center gap-8">
@@ -65,7 +65,7 @@ const Navbar = () => {
             {menuItems.map((item) => (
               <li
                 key={item.name}
-                className="relative flex cursor-pointer items-center gap-1"
+                className="relative flex pb-4 cursor-pointer items-center gap-1"
                 onMouseEnter={() => setActiveDropdown(item.name)}
                 onMouseLeave={() => setActiveDropdown(null)}
               >
