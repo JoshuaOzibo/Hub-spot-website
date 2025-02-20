@@ -1,133 +1,110 @@
-import Button from "./Button";
-import { IoIosArrowDown } from "react-icons/io";
-import HubspotFullLogo from "../assets/logo/Hubspot_Full_Logo.svg";
-import { TbMenu4 } from "react-icons/tb";
-import { CgOptions } from "react-icons/cg";
-import { MdMessage } from "react-icons/md";
-import { HiUser } from "react-icons/hi2";
-import { IoIosSearch } from "react-icons/io";
 import { useEffect, useState } from "react";
+import { IoIosArrowDown } from "react-icons/io";
+import { TbMenu4 } from "react-icons/tb";
+import Button from "./Button";
+import HubspotFullLogo from "../assets/logo/Hubspot_Full_Logo.svg";
 import MobileNavLogo from "../assets/logo/hubSpotNavMobile.svg";
-import Dropdown from "./Dropdown";
+import Modal from "./Modal";
 
 const Navbar = () => {
   const [isFixed, setIsFixed] = useState(false);
-  const [selectedLanguage, setSelectedLanguage] = useState("English");
-  const [selectedAboutUs, setSelectedAboutUs] = useState("About Us");
-
-  const languages = [
-    "English",
-    "Español",
-    "Français",
-    "Deutsch",
-    "Português",
-    "日本語",
-    "한국어",
-  ];
-  const AboutUs = [
-    "About Us",
-    "Careers",
-    "Contact Us",
-    "Investor Relations",
-    "Management Team",
-  ];
+  const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
 
   useEffect(() => {
     const handleScroll = () => {
-      // You can adjust this value (100) to change when the navbar becomes fixed
-      if (window.scrollY > 50) {
-        setIsFixed(true);
-      } else {
-        setIsFixed(false);
-      }
+      setIsFixed(window.scrollY > 50);
     };
 
     window.addEventListener("scroll", handleScroll);
-
-    // Cleanup listener on component unmount
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // Navbar items with corresponding content
+  const menuItems = [
+    { name: "Products", content: "Explore our cutting-edge products." },
+    {
+      name: "Solutions",
+      content: "Discover tailored solutions for your business.",
+    },
+    { name: "Pricing", content: "Check our flexible pricing plans." },
+    { name: "Resources", content: "Access valuable resources and guides." },
+  ];
+
   return (
     <section className="bg-white z-50 w-full">
+      {/* Top Navbar */}
       <main className="lg:flex hidden justify-between w-full lg:px-40 sm:px-4 px-2 py-3 items-center">
         <div className="flex items-center gap-4">
-          <Dropdown
-            options={languages}
-            selectedOption={selectedLanguage}
-            onOptionChange={setSelectedLanguage}
-            type="language"
-          />
-          <div className="flex cursor-pointer items-center gap-1">
-            <CgOptions />
-            <p className="text-sm font-medium">High Contrast</p>
-          </div>
-          <div className="flex cursor-pointer items-center gap-1">
-            <MdMessage />
-            <p className="text-sm font-medium">Customer Support</p>
-          </div>
-          <div className="flex cursor-pointer items-center gap-1">
-            <HiUser />
-            <p className="text-sm font-medium">Contact Sales</p>
-          </div>
+          <p className="text-sm font-medium">Customer Support</p>
+          <p className="text-sm font-medium">Contact Sales</p>
         </div>
 
-        {/* right */}
         <div className="flex items-center gap-4">
-          <IoIosSearch />
           <p>Login</p>
-          <Dropdown
-            options={AboutUs}
-            selectedOption={selectedAboutUs}
-            onOptionChange={setSelectedAboutUs}
-            type="about"
-          />
         </div>
       </main>
+
+      {/* Main Navbar */}
       <nav
-        className={`flex bg-white w-full shadow-lg lg:px-40 sm:px-4 px-2 py-4 items-center justify-between ${
-          isFixed ? "fixed top-0" : ""
+        className={`flex bg-white border-b w-full shadow-lg lg:px-40 sm:px-4 px-2 items-center justify-between ${
+          isFixed ? "fixed top-0 border-b" : ""
         }`}
       >
-        <div className="flex transition-all duration-300 items-center gap-8">
-          <a href="" aria-label="HubSpot">
-            {isFixed && <img src={MobileNavLogo} alt="HubspotLogo" className=" w-[30px] h-8"/>}
-            {!isFixed && <img src={HubspotFullLogo} alt="HubspotLogo" className=" w-[100px] h-10"/>}
+        <div className="flex items-center gap-8">
+          {/* Logo */}
+          <a href="/" aria-label="HubSpot">
+            <img
+              src={isFixed ? MobileNavLogo : HubspotFullLogo}
+              alt="HubspotLogo"
+              className={isFixed ? "w-[30px] h-8" : "w-[100px] h-10"}
+            />
           </a>
 
+          {/* Navbar Items */}
           <ul className="md:flex hidden items-center gap-4">
-            <li className=" flex cursor-pointer items-center gap-1">
-              <p className="text-base font-medium text-[#213343]">Products</p>
-              <IoIosArrowDown />
-            </li>
-            <li className=" flex cursor-pointer items-center gap-1">
-              <p className="text-base font-medium text-[#213343]">Solutions</p>
-              <IoIosArrowDown />
-            </li>
-            <li className=" flex cursor-pointer items-center gap-1">
-              <p className="text-base font-medium text-[#213343]">Pricing</p>
-              <IoIosArrowDown />
-            </li>
-            <li className=" flex cursor-pointer items-center gap-1">
-              <p className="text-base font-medium text-[#213343]">Resources</p>
-              <IoIosArrowDown />
-            </li>
+            {menuItems.map((item) => (
+              <li
+                key={item.name}
+                className="relative flex cursor-pointer items-center gap-1"
+                onMouseEnter={() => setActiveDropdown(item.name)}
+                onMouseLeave={() => setActiveDropdown(null)}
+              >
+                <p className="text-base font-medium text-[#213343]">
+                  {item.name}
+                </p>
+                <IoIosArrowDown />
+              </li>
+            ))}
           </ul>
         </div>
 
+        {/* Buttons */}
         <div className="lg:flex hidden items-center gap-4">
           <Button
-            className=" bg-[#ff5c35] font-bold text-[#fff] py-2 px-4 "
+            className="bg-[#ff5c35] font-bold text-[#fff] py-2 px-4"
             value="Get a demo"
           />
           <Button
-            className=" text-[#ff5c35] font-semibold py-2 px-4"
+            className="text-[#ff5c35] font-semibold py-2 px-4"
             value="Get started free"
           />
         </div>
 
+        {/* Mobile Menu */}
         <TbMenu4 className="lg:hidden block" size={45} />
       </nav>
+
+      {/* Dropdown Modal - Shows different content based on activeDropdown */}
+      {activeDropdown && (
+        <Modal
+          activeDropdown={activeDropdown}
+          content={
+            menuItems.find((item) => item.name === activeDropdown)?.content ||
+            ""
+          }
+          setActiveDropdown={setActiveDropdown}
+        />
+      )}
     </section>
   );
 };
