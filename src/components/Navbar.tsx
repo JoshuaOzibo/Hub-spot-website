@@ -15,7 +15,7 @@ const Navbar = () => {
   useEffect(() => {
     const handleScroll = () => {
       setIsFixed(window.scrollY > 50);
-      };
+    };
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
@@ -49,14 +49,14 @@ const Navbar = () => {
             {menuItems.map((item) => (
               <li
                 key={item.name}
-                className="relative flex bg-red-500 pb-4 cursor-pointer items-center gap-1"
-                onMouseEnter={() => setActiveDropdown(item.name)}
-                onMouseLeave={() => setActiveDropdown(null)}
+                className="relative flex pb-4 cursor-pointer items-center gap-1"
+                onMouseEnter={() => item.name !== "Pricing" && setActiveDropdown(item.name)}
+                onMouseLeave={() => item.name !== "Pricing" && setActiveDropdown(null)}
               >
                 <p className="text-base font-medium text-[#213343]">
                   {item.name}
                 </p>
-                <IoIosArrowDown />
+                {item.name !== "Pricing" && <IoIosArrowDown />}
               </li>
             ))}
           </ul>
