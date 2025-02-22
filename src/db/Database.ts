@@ -92,3 +92,13 @@ export const Database = [
     ],
   },
 ];
+
+export const menuItems = [
+  { name: "Products", content: "Explore our cutting-edge products." },
+  {
+    name: "Solutions",
+    content: "Discover tailored solutions for your business.",
+  },
+  { name: "Pricing", content: "Check our flexible pricing plans." },
+  { name: "Resources", content: "Access valuable resources and guides." },
+];

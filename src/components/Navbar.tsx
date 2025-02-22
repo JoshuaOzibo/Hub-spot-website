@@ -4,7 +4,8 @@ import { TbMenu4 } from "react-icons/tb";
 import Button from "./Button";
 import HubspotFullLogo from "../assets/logo/Hubspot_Full_Logo.svg";
 import MobileNavLogo from "../assets/logo/hubSpotNavMobile.svg";
-import Modal from "./Modal";
+import Modal from "./Modals/Modal";
+import { menuItems } from "../db/Database";
 
 const Navbar = () => {
   const [isFixed, setIsFixed] = useState(false);
@@ -18,17 +19,6 @@ const Navbar = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
-  // Navbar items with corresponding content
-  const menuItems = [
-    { name: "Products", content: "Explore our cutting-edge products." },
-    {
-      name: "Solutions",
-      content: "Discover tailored solutions for your business.",
-    },
-    { name: "Pricing", content: "Check our flexible pricing plans." },
-    { name: "Resources", content: "Access valuable resources and guides." },
-  ];
 
   return (
     <section className="bg-white z-[99999] w-full">
