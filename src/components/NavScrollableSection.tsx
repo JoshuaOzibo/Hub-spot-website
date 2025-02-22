@@ -5,8 +5,21 @@ import LanguageSelector from "./LanguageSelector";
 import { useState } from "react";
 
 const NavScrollableSection = () => {
-  const languages = ["English", "Spanish", "French", "German"]; 
-  const about = ["About", "Team", "Careers", "Blog"]; 
+  const languages = [
+    "English",
+    "日本語",
+    "Deutsch",
+    "Español",
+    "Português",
+    "Français",
+  ];
+  const about = [
+    "About",
+    "Careers",
+    "Contact Us",
+    "Investor Relations",
+    "Management Team",
+  ];
   const [selectedLanguage, setSelectedLanguage] = useState(languages[0]);
   const [selectedAbout, setSelectedAbout] = useState(about[0]);
 
