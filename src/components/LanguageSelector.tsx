@@ -38,7 +38,6 @@ const LanguageSelector = ({
         data-tooltip-id={`${selectedItem}-tooltip`}
         data-tooltip-place="bottom"
       >
-        {icon}
         <p className="text-sm font-medium">{selectedLanguage}</p>
         <IoIosArrowDown />
       </div>

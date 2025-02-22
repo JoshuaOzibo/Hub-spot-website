@@ -6,6 +6,7 @@ import HubspotFullLogo from "../assets/logo/Hubspot_Full_Logo.svg";
 import MobileNavLogo from "../assets/logo/hubSpotNavMobile.svg";
 import Modal from "./Modals/Modal";
 import { menuItems } from "../db/Database";
+import NavScrollableSection from "./NavScrollableSection";
 
 const Navbar = () => {
   const [isFixed, setIsFixed] = useState(false);
@@ -14,7 +15,7 @@ const Navbar = () => {
   useEffect(() => {
     const handleScroll = () => {
       setIsFixed(window.scrollY > 50);
-    };
+      };
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
@@ -23,15 +24,8 @@ const Navbar = () => {
   return (
     <section className="bg-white z-[99999] w-full">
       {/* Top Navbar */}
-      <main className="lg:flex hidden justify-between w-full lg:px-40 sm:px-4 px-2 py-3 items-center">
-        <div className="flex items-center gap-4">
-          <p className="text-sm font-medium">Customer Support</p>
-          <p className="text-sm font-medium">Contact Sales</p>
-        </div>
-
-        <div className="flex items-center gap-4">
-          <p>Login</p>
-        </div>
+      <main className="lg:flex hidden ">
+        <NavScrollableSection />
       </main>
 
       {/* Main Navbar */}
@@ -55,7 +49,7 @@ const Navbar = () => {
             {menuItems.map((item) => (
               <li
                 key={item.name}
-                className="relative flex pb-4 cursor-pointer items-center gap-1"
+                className="relative flex bg-red-500 pb-4 cursor-pointer items-center gap-1"
                 onMouseEnter={() => setActiveDropdown(item.name)}
                 onMouseLeave={() => setActiveDropdown(null)}
               >

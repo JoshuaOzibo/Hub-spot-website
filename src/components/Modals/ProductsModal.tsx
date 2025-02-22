@@ -1,8 +1,8 @@
-import React from 'react'
+
 
 const ProductsModal = () => {
   return (
-    <div>
+    <div className="w-full h-full py-10 bg-red-500">
       Products
     </div>
   )

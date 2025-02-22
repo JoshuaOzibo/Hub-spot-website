@@ -17,7 +17,7 @@ const Modal = ({ activeDropdown, content, setActiveDropdown }: ModalProps) => {
               onMouseEnter={() => setActiveDropdown(content)}
               onMouseLeave={() => setActiveDropdown(null)}
          className="absolute left-1/2 -translate-x-1/2 w-[82%] bg-white shadow-lg">
-          {activeDropdown === "Products" && <ProductsModal />}
+          {activeDropdown === "Products" && <ProductsModal  />}
           {activeDropdown === "Solutions" && <SolutionsModal />}
           {activeDropdown === "Resources" && <ResourcesModal />}
         </div>
