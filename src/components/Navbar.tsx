@@ -31,7 +31,7 @@ const Navbar = () => {
   ];
 
   return (
-    <section className="bg-white z-50 w-full">
+    <section className="bg-white z-[99999] w-full">
       {/* Top Navbar */}
       <main className="lg:flex hidden justify-between w-full lg:px-40 sm:px-4 px-2 py-3 items-center">
         <div className="flex items-center gap-4">
@@ -46,7 +46,7 @@ const Navbar = () => {
 
       {/* Main Navbar */}
       <nav
-        className={`flex bg-white border-b w-full shadow-lg lg:px-40 sm:px-4 px-2 justify-between ${
+        className={`flex bg-white border-b w-full shadow-lg lg:px-40 sm:px-4 px-2 justify-between z-[99999] ${
           isFixed ? "fixed top-0 border-b py-5" : ""
         }`}
       >
