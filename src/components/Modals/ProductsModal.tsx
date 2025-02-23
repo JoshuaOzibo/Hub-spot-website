@@ -54,6 +54,19 @@ const ProductsModal = () => {
             <a href="##">Free and premium plans</a>
           </div>
         </div>
+
+        <div>
+          <div>
+            <h1>Breeze</h1>
+            <p>HubSpot's AI that powers the entire customer platform</p>
+            <a href="##">See all Ai Features</a>
+          </div>
+          <div>
+            <h1>App Marketplace</h1>
+            <p>Connect your favorite apps to HubSpot</p>
+            <a href="##">See all integrations</a>
+          </div>
+        </div>
       </main>
     </section>
   )
