@@ -1,6 +1,5 @@
 import { Tooltip } from "react-tooltip";
 import { IoIosArrowDown } from "react-icons/io";
-import { TiMicrophone } from "react-icons/ti";
 
 interface LanguageSelectorProps {
   languages: string[];
@@ -15,7 +14,6 @@ const LanguageSelector = ({
   selectedLanguage, 
   onLanguageChange,
   selectedItem,
-  icon = <TiMicrophone />
 }: LanguageSelectorProps) => {
   const languageContent = (
     <div className="py-2 bg-white min-w-[120px]">
